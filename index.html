@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Волк и заяц</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/astar.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+
+    <div class="col-sm-6">
+        <h1>Information</h1>
+
+        <form class="form-horizontal">
+
+            <h3>Field</h3>
+
+            <div class="form-group">
+                <label for="size" class="col-sm-4 control-label">Size:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="size" id="size" class="form-control" placeholder="Input size of field..." />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <h3>Trees</h3>
+
+            <div class="form-group">
+                <label for="numTrees" class="col-sm-4 control-label">Number of trees:</label>
+                <div class="col-sm-4">
+                    <input type="text" name="numTrees" id="numTrees" class="form-control" placeholder="Type here..."
+                            value="40" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="timeTrees" class="col-sm-4 control-label">Time of trees' life</label>
+                <div class="col-sm-4">
+                    <input type="text" name="timeTrees" id="timeTrees" class="form-control" placeholder="Input 'life steps'..."
+                            value="40" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <h3>Bushes</h3>
+
+            <div class="form-group">
+                <label for="numBushes" class="col-sm-4 control-label">Number of bushes</label>
+                <div class="col-sm-4">
+                    <input type="text" name="numBushes" id="numBushes" class="form-control" placeholder="Type here..."
+                            value="40" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="timeBushes" class="col-sm-4 control-label">Time of bushes' life</label>
+                <div class="col-sm-4">
+                    <input type="text" name="timeBushes" id="timeBushes" class="form-control" placeholder="Input 'life steps'..."
+                            value="40"/>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <h3>Animals</h3>
+
+            <div class="form-group">
+                <label for="stepsRabbit" class="col-sm-4 control-label">Number of rabbit's steps</label>
+                <div class="col-sm-4">
+                    <input type="text" name="stepsRabbit" id="stepsRabbit" class="form-control" placeholder="Type here..."
+                            value="7" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="stepsWolf" class="col-sm-4 control-label">Number of wolf's steps</label>
+                <div class="col-sm-4">
+                    <input type="text" name="stepsWolf" id="stepsWolf" class="form-control" placeholder="Type here..."
+                            value="4" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="time" class="col-sm-4 control-label">Time of the step (ms):</label>
+                <div class="col-sm-4">
+                    <input type="text" name="time" id="time" class="form-control" placeholder="Type here..."
+                           value="1000" />
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-8">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-md-6" id="rightCol">
+    </div>
+
+</body>
+</html>
+
