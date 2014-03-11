@@ -408,7 +408,7 @@ function GameController(size, numTrees, timeTrees, numBushes, timeBushes, stepsR
 
             //console.log('GRID: ' + grid);
 
-            clearInterval(intervalId);
+            //clearInterval(intervalId);
 
             engine(self.wolf,self.rabbit,bushes,trees);
 
@@ -475,13 +475,13 @@ function engine(wolf,rabbit,bushes,trees) {
     }
 
 
-    for (var i = 0; i < size; i++) {
-        cells[0][i].innerHTML = i;
-    }
-
-    for (var i = 0; i < size; i++) {
-        cells[i][0].innerHTML = i;
-    }
+//    for (var i = 0; i < size; i++) {
+//        cells[0][i].innerHTML = i;
+//    }
+//
+//    for (var i = 0; i < size; i++) {
+//        cells[i][0].innerHTML = i;
+//    }
 
    //for (var i = 0; )
 
